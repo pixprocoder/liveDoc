@@ -1,8 +1,7 @@
-import "./globals.css";
-import { Inter as FontSans } from "next/font/google";
-import HomePage from "./(root)/page";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import { Inter as FontSans } from "next/font/google";
+import "./globals.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,7 +24,7 @@ export default function RootLayout({
       <body
         className={cn("min-h-screen  font-sans antialiased", fontSans.variable)}
       >
-        <HomePage />
+        {children}
       </body>
     </html>
   );
