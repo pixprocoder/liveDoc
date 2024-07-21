@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
-import HomePage from "./page";
+import HomePage from "./(root)/page";
 import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 
@@ -23,10 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
+        className={cn("min-h-screen  font-sans antialiased", fontSans.variable)}
       >
         <HomePage />
       </body>
